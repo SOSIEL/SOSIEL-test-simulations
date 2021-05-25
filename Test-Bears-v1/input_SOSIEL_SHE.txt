@@ -11,8 +11,8 @@
 >> Agent	        Goal    Goal                        	Reference                       Change focal      	Is        
 >> archetype            name    tendency                    	variable			value on prior     	cumulative
 >> ---------	        ----    --------                    	-----------------               --------------     	----------
-   ForestManager        G1      EqualToOrAboveFocalValue        ManageAreaMaturityPercent       no                      yes
-   HouseholdMember      G3      Maximize                        Income                          yes                     no
+   ForestManager        G1      EqualToOrAboveFocalValue        ManageAreaMaturityPercent       no                      yes        -
+   HouseholdMember      G3      Maximize                        Income                          yes                     no         -
 
 >> The number of possible mental (sub-)models (rows) is unlimited. The number of associated
 >> goals (columns) is limited to the number of goals in the GoalAttributes table. This table

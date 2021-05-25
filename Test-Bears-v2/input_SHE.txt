@@ -56,5 +56,5 @@ DO	MM101-1_DO1
 >> Agent     Management	Site
 >>           area	selection
 >> -----     ----------	---------
-   HM1       999        RandomWalk  << Fake MA for agents that do not interact with forest.
-   HM2       999        RandomWalk  << Fake MA for agents that do not interact with forest.
+   HM1       999        RandomWalk  1 << Fake MA for agents that do not interact with forest.
+   HM2       999        RandomWalk  1 << Fake MA for agents that do not interact with forest.

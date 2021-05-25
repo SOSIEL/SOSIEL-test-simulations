@@ -11,7 +11,7 @@
 >> Agent	        Goal    Goal                        	Reference                       Change focal      	Is        
 >> archetype            name    tendency                    	variable			value on prior     	cumulative
 >> ---------	        ----    --------                    	-----------------               --------------     	----------
-   HouseholdMember      G3      Maximize                        Income                          yes                     no
+   HouseholdMember      G3      Maximize                        Income                          yes                     no          -
 
 >> The number of possible mental (sub-)models (rows) is unlimited. The number of associated
 >> goals (columns) is limited to the number of goals in the GoalAttributes table. This table

@@ -4,11 +4,6 @@
 >> functions with Biomass Harvest.
    Mode	        1,3
 
->> Mapping of agent to modes
-   AgentToMode
-   FM1 1
-   FM2 3
-
 >> Determines the frequency of SHE's activation. When SHE's in Mode 2, the timestep
 >> must align with Biomass Harvest's.
    Timestep    5
@@ -61,5 +56,5 @@ DO	MM101-1_DO1
 >> Agent     Management	Site
 >>           area	selection
 >> -----     ----------	---------
-   FM1       1,2,3	RandomWalk
-   FM2       2,3,4	RandomWalk
+   FM1       1,2,3	RandomWalk 1
+   FM2       2,3,4	RandomWalk 3

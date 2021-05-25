@@ -56,6 +56,6 @@ DO	MM101-1_DO1
 >> Agent     Management	Site
 >>           area	selection
 >> -----     ----------	---------
-   FM1       1,2,3	RandomWalk
-   FM2       2,3,4	RandomWalk
-   HM1       1
+   FM1       1,2,3	RandomWalk 1
+   FM2       2,3,4	RandomWalk 1
+   HM1       1      RandomWalk 1
