@@ -1,0 +1,12 @@
+LandisData  "Output Biomass"
+
+Timestep  10
+
+MakeTable yes  << Optional parameter
+
+Species           confsens
+                  confrslt
+                  brdlsens
+                  brdlrslt
+
+MapNames  1_bms_af_bl/{species}-{timestep}.tif

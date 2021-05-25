@@ -1,0 +1,9 @@
+DecisionOption,AntecedentVariable,AntecedentOperator,AntecedentValue,AntecedentReference,AntecedentValueType,AntecedentVariable,AntecedentOperator,AntecedentValue,AntecedentReference,AntecedentValueType,AntecedentVariable,AntecedentOperator,AntecedentValue,AntecedentReference,AntecedentValueType,AntecedentVariable,AntecedentOperator,AntecedentValue,AntecedentReference,AntecedentValueType
+MM100-1_DO1,ManageAreaBiomass,>,0,,Double,,,,,,,,,,,,,,,
+MM101-1_DO1,ManageAreaBiomass,>,0,,Double,,,,,,,,,,,,,,,
+MM1-1_DO1,IsActive,==,TRUE,,String,,,,,,,,,,,,,,,
+MM1-1_DO2,Age,>=,0,WorkAgeMin,String,Age,<=,0,WorkAgeMax,String,Gender,==,male,,String,Disability,==,FALSE,,String
+MM1-1_DO3,Age,>=,0,WorkAgeMin,String,Age,<=,0,WorkAgeMax,String,Gender,==,male,,String,Disability,==,FALSE,,String
+MM1-1_DO4,Age,>=,0,WorkAgeMax,String,,,,,,,,,,,,,,,
+MM1-1_DO5,Disability,==,FALSE,,String,,,,,,,,,,,,,,,
+MM1-1_DO6,Age,>=,0,WorkAgeMin,String,Age,<=,0,WorkAgeMax,String,Disability,==,FALSE,,String,,,,,

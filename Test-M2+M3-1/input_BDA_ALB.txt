@@ -1,0 +1,46 @@
+LandisData "BDA Agent"
+
+BDAAgentName	AsianLonghornedBeetle 								
+BDPCalibrator	1	 							
+SRDMode	mean								
+
+>>-------- Regional Outbreak Inputs -------------
+OutbreakPattern		CyclicNormal	<<CyclicNormal or CyclicUniform
+Mean			1		<< years
+StDev			0		<< years
+TimeSinceLastEpidemic	0		<<years
+TemporalType 		variablepulse	<<pulse or variablepulse
+MinROS			3
+MaxROS			3
+									
+>>-------- Dispersal Inputs ----------------------									
+Dispersal	yes	<<yes or no							
+DispersalRate	840     <<meters/year 30000x30000 m in approx 20 years 							
+EpidemicThresh	0.0001	<<0.0001 << to calibrate, compare how rapidly it spreads accross the landscape"							
+InitialEpicenterNum	2	<<a few too many to start - drop to 2 (was 5)							
+OutbreakEpicenterCoeff	0.1	<< not enough for continuous spread.  Try 0.1 CHECK EQUATION - was 0.01
+OutbreakEpicenterThresh 0.0							
+SeedEpicenter	no	<<yes or no							
+SeedEpicenterCoeff	0.5								
+DispersalTemplate	MaxRadius	<<MaxRadius, 4N,8N, 12N, or 24N"							
+				 					
+									
+>>Neighborhood Resource Inputs 									
+NeighborFlag	no 	<<yes or no							
+NeighborSpeedUp	none	<<none, 2x, 3x, or 4x"							
+NeighborRadius	1	<<meters							
+NeighborShape	uniform	<<uniform, linear, or gaussian"							
+NeighborWeight	1								
+			
+>>--------
+IntensityClass2_BDP 0.25
+IntensityClass3_BDP 0.5
+						
+BDASpeciesParameters									
+	
+>>         -------------Host Value--------------  -------------Susceptibility-------------
+>>Species  MinorHost    2ndHost      MajorHost    Class3        Class2        Class1	    CFS
+>>Name     Age SRDProb  Age SRDProb  Age SRDProb  Age VulnProb  Age VulnProb  Age VulnProb  Conifer?
+>> ---------------------------------------------------------------------------------------------
+confsens   10	0.25	40  0.5	40   1.0	10  1.0	40  1.0	40  1.0	no
+																								

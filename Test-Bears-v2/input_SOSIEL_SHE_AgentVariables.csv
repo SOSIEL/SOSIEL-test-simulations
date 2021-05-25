@@ -1,0 +1,16 @@
+Agent,VariableName,VariableType,VariableValue
+HM1,Age,integer,35
+HM1,Gender,string,male
+HM1,Disability,boolean,FALSE
+HM1,Household,integer,1
+HM1,NuclearFamily,integer,1
+HM1,PairStatus,boolean,paired
+HM1,Householdhead,boolean,TRUE
+HM2,Age,integer,30
+HM2,Gender,string,female
+HM2,Disability,boolean,FALSE
+HM2,Household,integer,1
+HM2,NuclearFamily,integer,1
+HM2,ExternalRelations,string,church
+HM2,PairStatus,boolean,paired
+HM2,Householdhead,boolean,FALSE

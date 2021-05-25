@@ -1,0 +1,3 @@
+Agent,Archetype,Goals,Goal focal values,Goal importance,Goal value range
+HM1,HouseholdMember,G3,G3<0>,G3<1.0>,G3<0;0>
+HM2,HouseholdMember,G3,G3<0>,G3<1.0>,G3<0;0>

@@ -1,0 +1,9 @@
+DecisionOption,RequiredParticipants,ConsequentVariable,ConsequentValue,ConsequentValueReference,ConsequentValueType
+MM100-1_DO1,1,TargetHarvestSize,1000,,Double
+MM101-1_DO1,1,TargetHarvestSize,1000,,Double
+MM1-1_DO1,1,Income,IncomeFromChoresAtHome,,Double
+MM1-1_DO2,1,Income,IncomeFromForestry,,Double
+MM1-1_DO3,1,Income,IncomeFromAbroad,,Double
+MM1-1_DO4,1,Income,IncomeFromPension,,Double
+MM1-1_DO5,1,Income,IncomeFromDisability,,Double
+MM1-1_DO6,1,Income,IncomeFromPickingMushrooms,,Double

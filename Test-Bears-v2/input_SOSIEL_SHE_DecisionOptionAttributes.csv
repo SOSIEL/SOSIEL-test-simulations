@@ -1,0 +1,7 @@
+DecisionOption,RequiredParticipants,ConsequentVariable,ConsequentValue,ConsequentValueReference,ConsequentValueType
+MM1-1_DO1,1,Income,0,IncomeFromChoresAtHome,Double
+MM1-1_DO2,1,Income,0,IncomeFromForestry,Double
+MM1-1_DO3,1,Income,0,IncomeFromAbroad,Double
+MM1-1_DO4,1,Income,0,IncomeFromPension,Double
+MM1-1_DO5,1,Income,0,IncomeFromDisability,Double
+MM1-1_DO6,1,Income,0,IncomeFromPickingMushrooms,Double

@@ -1,0 +1,87 @@
+LandisData  "Biomass Harvest"
+
+>> NOTE: MM2-1_02 was superficially modified to account for a change in BHE that was preventing the program from running.
+
+
+>>----------------
+>> REQUIRED INPUTS
+>>-----------------
+   Timestep		5
+
+   ManagementAreas 	ecoregions_square.img
+
+   Stands     		Stand_Map.img
+
+
+>> -------------------------
+>> HARVESTING PRESCRIPTIONS
+>> -------------------------
+
+Prescription 	MM100-1_DO1
+
+    	StandRanking 	Economic
+>> 		Species 	Economic Rank 	Minimum Age
+>> 		------- 	------------- 	-----------
+    		confsens  	40           	50  
+		confrslt	90		50
+		brdlsens	40		50
+		brdlrslt	90		50 
+	
+	MinimumAge  	50
+	
+>>	MinimumTimeSinceLastHarvest	20
+    
+    	SiteSelection	Complete
+
+	CohortsRemoved	SpeciesList
+		confsens 50-200(90%)
+		confrslt 50-350(90%)
+		brdlsens 50-400(90%)
+		brdlrslt 50-300(90%)
+
+Prescription 	MM101-1_DO1
+
+    	StandRanking 	Economic
+>> 		Species 	Economic Rank 	Minimum Age
+>> 		------- 	------------- 	-----------
+    		confsens  	40           	50  
+		confrslt	90		50
+		brdlsens	40		50
+		brdlrslt	90		50 
+	
+	MinimumAge  	50
+	
+>>	MinimumTimeSinceLastHarvest	20
+    
+    	SiteSelection	Complete
+
+	CohortsRemoved	SpeciesList
+		confsens 50-200(80%)
+		confrslt 50-350(80%)
+		brdlsens 50-400(80%)
+		brdlrslt 50-300(80%)
+
+>> ----------------------------------
+>> HARVESTING IMPLEMENTATION 
+>> ---------------------------------
+
+    HarvestImplementations
+>>	Mgmt Area	Prescription	Harvest Area	BeginTime	EndTime
+>> 	---------   	------------   	------------   	---------- 	--------
+	1		MM100-1_DO1	90%		0  	    	100
+	1		MM101-1_DO1	80%		0  	    	100
+	2		MM100-1_DO1	90%		0  	    	100
+	2		MM101-1_DO1	80%		0  	    	100
+	3		MM100-1_DO1	90%		0  	    	100
+	3		MM101-1_DO1	80%		0  	    	100
+	4		MM100-1_DO1	90%		0  	    	100
+	4		MM101-1_DO1	80%		0  	    	100
+	
+>> ----------
+>> OUTPUTS
+>> ----------
+
+PrescriptionMaps    harvest/biomass-harvest-prescripts-{timestep}.img
+BiomassMaps         harvest/biomass-removed-{timestep}.img
+EventLog            biomass-harvest-event-log.csv
+SummaryLog	    biomass-harvest-summary-log.csv

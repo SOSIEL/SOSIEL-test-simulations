@@ -1,0 +1,91 @@
+>> Name: input_SOSIEL_SHE.txt
+>> Description: The SOSIEL algorithm's main input file for parameterizing agents.
+>> Author: G. Sotnik.
+
+>> Algorithm Cognitive Level
+   CognitiveLevel	CL4
+
+>> The number of possible goals (rows) is unlimited.
+   GoalAttributes
+>> ---------	        ----    --------                    	-----------------               --------------     	----------
+>> Agent	        Goal    Goal                        	Reference                       Change focal      	Is        
+>> archetype            name    tendency                    	variable			value on prior     	cumulative
+>> ---------	        ----    --------                    	-----------------               --------------     	----------
+   ForestManager        G1      EqualToOrAboveFocalValue        ManageAreaMaturityPercent       no                      yes
+   HouseholdMember      G3      Maximize                        Income                          yes                     no
+
+>> The number of possible mental (sub-)models (rows) is unlimited. The number of associated
+>> goals (columns) is limited to the number of goals in the GoalAttributes table. This table
+>> also associates mental models with goals. For this reason, use "--" in cases when a mental
+>> model skips a goal.
+   MentalModelAttributes
+>> ------------------------------------------------------------------------------------------------------------------------------------
+>> Archetype		Mental		Modifiable	Maximum number	Decision option		Assosiated	Consequent	Consequent     		 
+>> name			(sub-)model			of decision	goal relationship	with		value		value
+>> 							options		(required if		goals		range		rounding 
+>>									MM is modifiable)
+>> ------------------------------------------------------------------------------------------------------------------------------------
+   ForestManager       MM100-1         yes             3               G1<->                   G1              0.0-1000        4
+   ForestManager       MM101-1         yes             3               G1<->                   G1              0.0-1000        4
+   HouseholdMember     MM1-1           no              7                                       G3
+
+>> The number of possible decision options (rows) is unlimited, as long as each is associated with
+>> a mental (sub-)model. The number of goal-related attributes is limited by the numbr of goals in
+>> GoalAttributes table.
+   DecisionOptionAttributes               input_SOSIEL_SHE_DecisionOptionAttributes.csv
+
+>> 
+   DecisionOptionAntecedentAttributes     input_SOSIEL_SHE_DecisionOptionAntecedentAttributes.csv
+
+>> 
+   AgentArchetypeAttributes
+>> ----------		---------	----------	----------
+>> Archetype		Archetype	Dataset         Goal importance
+>> name            	prefix		orientied	adjusting
+>> ----------       	----------    	----------      ----------   	  
+   ForestManager	FM		yes		yes
+   HouseholdMember	HM		yes		yes
+
+>> 
+   AgentArchetypeVariables
+>> ---------         ---------                  --------      --------		
+>> Archetype	     Variable	                Variable      Variable 			
+>> name     	     name	                type          value		
+>> ---------         ---------	                --------      --------
+   HouseholdMember   IncomeFromChoresAtHome     Integer       0
+   HouseholdMember   IncomeFromDisability       Integer       1800
+   HouseholdMember   IncomeFromPension          Integer       1800
+   HouseholdMember   IncomeFromForestry         Integer       3300
+   HouseholdMember   IncomeFromAbroad           Integer       16000
+   HouseholdMember   IncomeFromPickingMushrooms Integer       500
+   HouseholdMember   AgeMax                     Integer       100
+   HouseholdMember   WorkAgeMin                 Integer       18
+   HouseholdMember   WorkAgeMax                 Integer       60
+
+>> The number of possible agents (rows) is unlimited, but must equal the number in the other two
+>> agent-specific data tables. The number of agent goals and related goal attributes is limited
+>> by the number of goals in GoalAttributes.
+   AgentGoalAttributes               input_SOSIEL_SHE_AgentGoalAttributes.csv
+
+>> 
+   AgentVariables                    input_SOSIEL_SHE_AgentVariables.csv
+
+>> The number of possible agents (rows) is unlimited, but must equal the number in the other two
+>> agent-specific data tables. The number of agent MMs is limited by the number of MMs in
+>> MentalModelAttributes table. The number of goal AIs is limited by the number of goals in GoalAttributes table.
+   AgentDecisionOptionAttributes     input_SOSIEL_SHE_AgentDecisionOptionAttributes.csv
+
+>> Providing a DeathProbability value activates the death process. Providing a 
+>> BirthProbability value activates the birth process. Providing a
+>> PairingProbability value activates the pairing process.
+   DemographicAttributes             input_SOSIEL_SHE_DemographicAttributes.csv
+
+>> 
+   ProbabilityAttributes
+>> ----------     --------     ----		                          ------------
+>> Variable       Variable     File 			                  Ignore first
+>> parameter      type	       name			                  line
+>> ----------     --------     ----			                  ------------
+   Birth          Integer      input_SOSIEL_SHE_Birth_probability.csv     yes
+   Death          Integer      input_SOSIEL_SHE_Death_probability.csv     yes
+   General        Integer      input_SOSIEL_SHE_General_probability.csv   yes
