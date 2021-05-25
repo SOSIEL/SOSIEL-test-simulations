@@ -3,6 +3,8 @@
 *-log.txt
 *-log-*.csv
 *-log-*.txt
+*log.txt
+*log.csv
 simulation-*.log
 
 # Generated data
