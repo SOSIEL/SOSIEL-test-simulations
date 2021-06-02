@@ -17,3 +17,5 @@ bda/
 output_*.json
 output_SOSIEL_Harvest*
 wind/
+output/
+spp-age-stats/
