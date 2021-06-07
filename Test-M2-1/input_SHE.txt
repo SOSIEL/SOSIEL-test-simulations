@@ -1,11 +1,11 @@
    LandisData  "SOSIEL Harvest"
 
->> Determines which mode SHE is in. In Mode 1, SHE functions alone. In Mode 2, SHE
->> functions with Biomass Harvest. Default mode is 2.
->> Mode	        2
+   Mode	       2
+   Mode1SpeciesBiomassLogFile	she-mode1-spp-biomass-log.csv
+   Mode2SpeciesBiomassLogFile	she-mode2-spp-biomass-log.csv
+   Mode3SpeciesBiomassLogFile	she-mode3-spp-biomass-log.csv
+   GenerateSpeciesBiomassForManagementAreas 1,2,3
 
->> Determines the frequency of SHE's activation. When SHE's in Mode 2, the timestep
->> must align with Biomass Harvest's.
    Timestep    5
 
 >> Designates which SOSIEL Harvest and Biomass Harvest configuration files to use. When
