@@ -83,5 +83,6 @@ Prescription 	MM101-1_DO1
 
 PrescriptionMaps    harvest/biomass-harvest-prescripts-{timestep}.img
 BiomassMaps         harvest/biomass-removed-{timestep}.img
+ExposeManagementAreasForSites yes
 EventLog            biomass-harvest-event-log.csv
 SummaryLog	    biomass-harvest-summary-log.csv

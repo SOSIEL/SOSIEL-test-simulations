@@ -12,6 +12,8 @@ BDPMapNames     bda/{agentName}-BDP-{timestep}.gis
 
 LogFile		.\output_BDA_log.csv
 
+SelectedManagementAreas 1,2,3,4
+
 BDAInputFiles	input_BDA_ALB.txt
 		
 	

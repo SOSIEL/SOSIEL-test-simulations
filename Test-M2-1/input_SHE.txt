@@ -4,7 +4,8 @@
    Mode1SpeciesBiomassLogFile	she-mode1-spp-biomass-log.csv
    Mode2SpeciesBiomassLogFile	she-mode2-spp-biomass-log.csv
    Mode3SpeciesBiomassLogFile	she-mode3-spp-biomass-log.csv
-   GenerateSpeciesBiomassForManagementAreas 1,2,3
+>>   GenerateSpeciesBiomassForManagementAreas 1,2
+   GenerateSpeciesBiomassForManagementAreas all
 
    Timestep    5
 
