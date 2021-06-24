@@ -5,6 +5,10 @@
 >> Algorithm Cognitive Level
    CognitiveLevel	CL4
 
+>>GoalPrioritizing abc
+>>GoalPrioritizing Default
+GoalPrioritizing VBGP input_VBGP.csv
+
 >> The number of possible goals (rows) is unlimited.
    GoalAttributes
 >> ---------	        ----    --------                    	-----------------               --------------     	----------
